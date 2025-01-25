@@ -5,46 +5,13 @@ html {
     font-family: "Orbitron", sans-serif;
     color: #fff;
     overflow-x: hidden;
-    background-color: #000;
-}
-
-/* 星空の背景 */
-#stars,
-#twinkling {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-#stars {
-    background: #000 url("https://i.imgur.com/YKcGPNt.png") repeat top center;
-    z-index: -2;
-}
-
-#twinkling {
-    background: transparent url("https://i.imgur.com/XYMF4ca.png") repeat top center;
-    z-index: -1;
-    animation: move-twink-back 200s linear infinite;
-}
-
-@keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -10000px 5000px;
-    }
+    background-color: #fff;
+    text-align: center; /* 追加: 文章と画像を中央揃えにする */
 }
 
 /* ヘッダー */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background:  #333;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -118,7 +85,7 @@ p {
 .submenu {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #333;
     padding: 0.5rem;
     border-radius: 5px;
     white-space: nowrap; /* テキストを折り返さない */
@@ -131,6 +98,15 @@ nav ul li:hover .submenu {
 
 .submenu li {
     margin: 0.5rem 0;
+}
+
+.submenu a {
+    color: #fff; /* 文字色を白に設定 */
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
 }
 
 /* フッター */
@@ -212,7 +188,85 @@ img {
     resize: vertical;
 }
 
-/* New styles for htzs.html */
+/* 制作人员样式 */
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.team-member .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.team-member .comment {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* 各国研究机关 */
+.space-agencies {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.agency-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agency-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.agency {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.agency img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.agency p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff; /* 背景が黒色の場合、文字の色を白に設定 */
+}
+
+/* New styles for Article.html */
 .sub-nav {
     display: flex;
     justify-content: center;
@@ -253,22 +307,17 @@ img {
     margin: 15px 0;
 }
 
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.scroll-to-top img {
-    width: 40px;
-    height: 40px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
+.image-placeholder img {
+    height: 400px;
+    width: 600px;
+    text-align: center;
 
-.scroll-to-top img:hover {
-    opacity: 1;
 }
 
 /* 响应式设计 */
