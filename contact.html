@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宇宙探索センター</title>
+    <title>联系我们 - 宇宙探索センター</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -51,43 +51,30 @@
     </header>
     <main>
         <section class="hero">
-            <h1>欢迎来到宇宙探索センター</h1>
-            <p>探索宇宙的奥秘，见证人类的伟大航天成就</p>
+            <h1>联系我们</h1>
+            <p>与我们分享您的想法和问题</p>
         </section>
-        <section id="about" class="content-section">
-            <h2>关于我们</h2>
-            <p>宇宙探索センター致力于推动航天科技的发展，传播航天知识，激发公众对宇宙探索的热情。</p>
-        </section>
-        <section id="mission" class="content-section">
-            <h2>我们的使命</h2>
-            <p>通过展示中国航天的辉煌成就，推动航天科技的创新，为人类探索宇宙做出贡献。</p>
-        </section>
-        <section class="featured-content">
-            <h2>精选内容</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="img/mars-rover.jpg" alt="火星探测器">
-                    <h3>火星探测最新进展</h3>
-                    <p>了解中国火星探测任务的最新成果。</p>
-                    <a href="mars-exploration.html" class="button">查看详情</a>
+        <section class="contact-form">
+            <h2>联系表单</h2>
+            <form action="submit_contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="card">
-                    <img src="img/space-station.jpg" alt="空间站">
-                    <h3>空间站建设进程</h3>
-                    <p>探索中国空间站的建设历程和未来计划。</p>
-                    <a href="space-station.html" class="button">了解更多</a>
+                <div class="form-group">
+                    <label for="email">电子邮件:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="card">
-                    <img src="img/satellite.jpg" alt="卫星">
-                    <h3>卫星技术创新</h3>
-                    <p>发现最新的卫星技术和应用。</p>
-                    <a href="satellites.html" class="button">深入了解</a>
+                <div class="form-group">
+                    <label for="message">留言:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-            </div>
+                <button type="submit" class="button">提交</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>© 2025 宇宙探索 | <a href="terms.html">使用条款</a> | <a href="privacy.html">隐私政策</a></p>
+        <p>© 2025 宇宙探索 | 制作：陈锦鑫</p>
     </footer>
 </body>
 </html>
