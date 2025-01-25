@@ -5,7 +5,7 @@ html {
     font-family: "Orbitron", sans-serif;
     color: #fff;
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: #000;
     text-align: center; /* 追加: 文章と画像を中央揃えにする */
 }
 
