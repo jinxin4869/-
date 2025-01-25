@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>历史与里程碑 - 宇宙探索</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>航天发展</h1>
+        <div class="site-title">宇宙探索</div>
         <nav>
-            <a href="index.html">首页</a>
-            <a href="history.html">历史与里程碑</a>
-            <a href="technology.html">技术突破</a>
-            <a href="future.html">未来展望</a>
-            <a href="contact.html">联系我们</a>
+            <ul>
+                <li><a href="index.html">航天首页</a>
+                </li>
+                <li><a href="development.html">航天发展</a>
+                    <ul class="submenu">
+                        <li><a href="history.html">历史与里程碑</a></li>
+                        <li><a href="technology.html">技术突破</a></li>
+                        <li><a href="future.html">未来展望</a></li>
+                    </ul>
+                </li>
+                <li><a href="Accomplishment.html">航天成就</a>
+                    <ul class="submenu">
+                        <li><a href="manned-space.html">载人航天</a></li>
+                        <li><a href="moon-exploration.html">月球探测</a></li>
+                        <li><a href="mars-exploration.html">火星探测</a></li>
+                        <li><a href="space-station.html">空间站建设</a></li>
+                        <li><a href="mars-exploration.html">火星探测</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">航天产品</a>
+                    <ul class="submenu">
+                        <li><a href="probes.html">探测器</a></li>
+                        <li><a href="satellites.html">卫星</a></li>
+                        <li><a href="rockets.html">火箭</a></li>
+                        <li><a href="space-station.html">空间站</a></li>
+                    </ul>
+                </li>
+                <li><a href="Article.html">航天知识</a>
+                    <ul class="submenu">
+                        <li><a href="Information.html">火箭和宇航员</a></li>
+                        <li><a href="Quiz1.html">科普知识问答</a></li>
+                        <li><a href="Quiz3.html">创新大赛</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -22,14 +54,21 @@
         <h1>历史与里程碑</h1>
         <p>人类航天历史充满了挑战与辉煌</p>
     </section>
+    <nav class="sub-nav">
+        <a href="development.html" class="button">航天发展</a>
+        <a href="history.html" class="button">历史与里程碑</a>
+        <a href="technology.html" class="button">技术突破</a>
+        <a href="future.html" class="button">未来展望</a>
+    </nav>
     <section class="content">
         <h2>航天发展的重要时刻</h2>
         <p>从第一颗人造卫星到载人登月，每一步都见证了人类的进步。探索那些改变历史的重要时刻。</p>
+        
         <img src="img/mars_astronauts.jpg" alt="火星探索" class="feature-image">
     </section>
     </main>
     <footer>
-        <p>版权所有 &copy; 2025 航天科技发展组织</p>
+        <p>© 2025 宇宙探索 - 航天发展 | 制作：刘晓旭</p>
     </footer>
 </body>
 </html>

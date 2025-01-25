@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宇宙探索センター</title>
+    <title>宇宙探索</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div id="stars"></div>
-    <div id="twinkling"></div>
     <header>
         <div class="site-title">宇宙探索</div>
         <nav>
             <ul>
                 <li><a href="index.html">航天首页</a>
                 </li>
-                <li><a href="xw.html">航天发展</a>
+                <li><a href="development.html">航天发展</a>
                     <ul class="submenu">
                         <li><a href="history.html">历史与里程碑</a></li>
                         <li><a href="technology.html">技术突破</a></li>
                         <li><a href="future.html">未来展望</a></li>
                     </ul>
                 </li>
-                <li><a href="htrw.html">航天成就</a>
+                <li><a href="Accomplishment.html">航天成就</a>
                     <ul class="submenu">
                         <li><a href="manned-space.html">载人航天</a></li>
                         <li><a href="moon-exploration.html">月球探测</a></li>
                         <li><a href="mars-exploration.html">火星探测</a></li>
+                        <li><a href="space-station.html">空间站建设</a></li>
+                        <li><a href="mars-exploration.html">火星探测</a></li>
                     </ul>
                 </li>
-                <li><a href="fxrw.html">航天产品</a>
+                <li><a href="product.html">航天产品</a>
                     <ul class="submenu">
+                        <li><a href="probes.html">探测器</a></li>
                         <li><a href="satellites.html">卫星</a></li>
                         <li><a href="rockets.html">火箭</a></li>
                         <li><a href="space-station.html">空间站</a></li>
                     </ul>
                 </li>
-                <li><a href="htzs.html">航天知识</a>
+                <li><a href="Information.html">航天知识</a>
                     <ul class="submenu">
-                        <li><a href="htzs2.html">火箭和宇航员</a></li>
-                        <li><a href="htzs3.html">科普知识问答</a></li>
-                        <li><a href="htzs5.html">创新大赛</a></li>
+                        <li><a href="Information.html">火箭和宇航员</a></li>
+                        <li><a href="Quiz1.html">科普知识问答</a></li>
+                        <li><a href="Quiz3.html">创新大赛</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">联系我们</a></li>
@@ -51,37 +54,95 @@
     </header>
     <main>
         <section class="hero">
-            <h1>欢迎来到宇宙探索センター</h1>
+            <h1>欢迎来到宇宙探索</h1>
             <p>探索宇宙的奥秘，见证人类的伟大航天成就</p>
         </section>
         <section id="about" class="content-section">
             <h2>关于我们</h2>
-            <p>宇宙探索センター致力于推动航天科技的发展，传播航天知识，激发公众对宇宙探索的热情。</p>
+            <p>宇宙探索致力于推动航天科技的发展，传播航天知识，激发公众对宇宙探索的热情。</p>
         </section>
         <section id="mission" class="content-section">
             <h2>我们的使命</h2>
             <p>通过展示中国航天的辉煌成就，推动航天科技的创新，为人类探索宇宙做出贡献。</p>
         </section>
-        <section class="featured-content">
-            <h2>精选内容</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="img/mars-rover.jpg" alt="火星探测器">
-                    <h3>火星探测最新进展</h3>
-                    <p>了解中国火星探测任务的最新成果。</p>
-                    <a href="mars-exploration.html" class="button">查看详情</a>
+
+        <section id="team" class="content-section">
+            <h2>制作成员</h2>
+            <div class="team-container">
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="img/member1.png" alt="成员1">
+                        <p class="name">董润世</p>
+                        <p class="comment">航天发展离不开一代代人的努力。</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/member2.jpg" alt="成员2">
+                        <p class="name">刘晓旭</p>
+                        <p class="comment">通过制作这个航天发展主题的网站，<br>我深刻感受到科技探索的无尽魅力和人类对未知宇宙的追求精神。</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/space-station.jpg" alt="空间站">
-                    <h3>空间站建设进程</h3>
-                    <p>探索中国空间站的建设历程和未来计划。</p>
-                    <a href="space-station.html" class="button">了解更多</a>
+                <div class="team-row">
+                    <div class="team-member">
+                        <img src="img/member3.png" alt="成员3">
+                        <p class="name">胡润龙</p>
+                        <p class="comment">不要回答！不要回答！不要回答！</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/member4.png" alt="成员4">
+                        <p class="name">陈锦鑫</p>
+                        <p class="comment">下一次从地球看到哈雷彗星是2061年7月份</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/member5.png" alt="成员5">
+                        <p class="name">刘鑫</p>
+                        <p class="comment">世界属于三体</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/satellite.jpg" alt="卫星">
-                    <h3>卫星技术创新</h3>
-                    <p>发现最新的卫星技术和应用。</p>
-                    <a href="satellites.html" class="button">深入了解</a>
+            </div>
+        </section>
+
+        <section class="space-agencies">
+            <h2>各国研究机关</h2>
+            <div class="agency-container">
+                <div class="agency-row">
+                    <div class="agency">
+                        <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">
+                            <img src="img/nasa.jpg" alt="NASA">
+                        </a>
+                        <p>NASA</p>
+                    </div>
+                    <div class="agency">
+                        <a href="https://www.esa.int" target="_blank" rel="noopener noreferrer">
+                            <img src="img/esa.jpg" alt="ESA">
+                        </a>
+                        <p>ESA</p>
+                    </div>
+                    <div class="agency">
+                        <a href="https://www.jaxa.jp" target="_blank" rel="noopener noreferrer">
+                            <img src="img/jaxa.jpg" alt="JAXA">
+                        </a>
+                        <p>JAXA</p>
+                    </div>
+                </div>
+                <div class="agency-row">
+                    <div class="agency">
+                        <a href="https://www.dlr.de/en" target="_blank" rel="noopener noreferrer">
+                            <img src="img/dlr.jpg" alt="Roscosmos">
+                        </a>
+                        <p>DLR</p>
+                    </div>
+                    <div class="agency">
+                        <a href="https://www.isro.gov.in" target="_blank" rel="noopener noreferrer">
+                            <img src="img/isro.jpg" alt="ISRO">
+                        </a>
+                        <p>ISRO</p>
+                    </div>
+                    <div class="agency">
+                        <a href="https://www.cnsa.gov.cn" target="_blank" rel="noopener noreferrer">
+                            <img src="img/cnsa.jpg" alt="CNSA">
+                        </a>
+                        <p>CNSA</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,5 +151,5 @@
         <p>© 2025 宇宙探索 | <a href="terms.html">使用条款</a> | <a href="privacy.html">隐私政策</a></p>
     </footer>
 </body>
-</html>
 
+</html>
